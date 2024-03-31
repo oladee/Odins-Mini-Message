@@ -25,7 +25,7 @@ router.get('/new', (req,res,next)=>{
 
 router.post('/new', (req,res,next)=>{
   let newMessage = req.body
-  messages.push({text : newMessage.message, user : newMessage.authorsName, added : new Date() })
+  messages.push({text : newMessage.message, user : newMessage.authorsName, added : new Date()})
   res.redirect('/')
 })
 
